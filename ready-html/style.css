@@ -1,0 +1,139 @@
+/*по дефолту и что будет применятся всему проекту/шрифт/высота/цвета/отступы*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: #000; 
+    background-color: #fff; 
+    margin: 30px 40px 30px 40px;
+}
+  
+/*так же разделила блоки комментариями*/
+/*HEADER*/
+
+.header__border {   
+    border-radius: 12px;
+    border: 2px solid black;
+    background: linear-gradient(0deg, #7B65D5, #7B65D5);
+}
+
+.header__border--title {   
+    width: 720px;
+    height: 70px;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 75px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header__text {
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+/*здесь обяденила стили для классов которые повторяются в коде*/
+.registration, .layout, .element__parameter--work, .text__block, .visual__block{
+    border-radius: 10px;
+}
+
+.registration, .layout, .element__parameter--work {
+    background: #EEA663;
+    width: 735px;
+    height: 60px;
+}
+
+.text__block, .visual__block{
+    background: #DEDEDE;
+}
+
+.registration__title, .layout__structure--title, .element__parameter--work__title, .text__block--title, .visual__block--title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+img {
+    width: 740px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/*REGISTRATION/ADD LAYOUTS*/
+.registration {
+    position: absolute;
+    top: 246px;
+    left: 30px;;
+}
+
+.registration__text {
+    margin-top: 25px;
+}
+
+/*LAYOUT STRUCTURE/TOOLS*/
+.layout {
+    position: absolute;
+    top: 920px;
+    left: 30px; 
+}
+
+.layout__structure--text  {
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
+.tools li {
+    margin: 30px 0px 25px 15px;
+    font-size: 16px;
+}
+
+/*ELEMENT/PARAMETER/WORK*/
+.element__parameter--work{
+    position: absolute;
+    top: 1350px;
+    left: 30px;
+}
+
+.element__parameter--work__text {
+    margin-top: 30px;
+}
+
+/*TEXT BLOCK*/
+.text__block {
+    position: absolute;
+    width: 735px;
+    height: 60px;
+    top: 700px;
+}
+
+.text__block--text {
+    margin-top: 30px;
+}
+
+/*VISUAL BLOCK*/
+.visual__block {
+    position: absolute;
+    width: 735px;
+    height: 60px;
+    top: 1400px;
+}
+
+.visual__block--text{
+    margin-top: 30px;
+}
+
+.visual__block--text__colored {
+    color: red;
+    cursor: pointer;
+}
+
+/*90% верстки сделала по памяти, остальное гуглила, в начале было стилей было на 199 строк, после сокрощения и обьеденение одинаковых стилей вышло на 139*/
